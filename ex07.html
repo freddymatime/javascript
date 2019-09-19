@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Exercice 7 - utilisation de switch
+Créer un bouton. Au click de ce bouton, lancer la fonction faireChoix().
+
+Cette fonction demande à l'utilisateur au moyen d'un prompt() de choisir entre 1, 2 ou 3.
+
+s'il choisit 1, on affiche avec une boîte d'alerte "1. Merci"
+s'il choisit 2, on affiche avec une boîte d'alerte "2. Bonjour"
+s'il choisit 3, on affiche avec une boîte d'alerte "3. Au revoir"
+s'il choisit autre chose, on affiche avec une boîte d'alerte "Pardon, que voulez-vous ?"-->
+
+<button type="button" onclick="faireChoix()"> choisir un nombre </button>
+
+    <script>
+    function faireChoix(){
+        var choisir = prompt("choisir 1,2 ou 3");
+        
+            switch (choisir){
+                case "1":
+                alert("Merci");
+                break;
+                case "2":
+                alert("Bonjour");
+                break;
+                case "3":
+                alert("Pardon que voulez vous?");
+                break;
+            }
+        
+        
+    }
+
+    
+    </script>
+
+
+    
+</body>
+</html>

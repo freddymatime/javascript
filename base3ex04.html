@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" name="button" onclick="raz()">RAZ</button>
+  </form>
+
+  <script>
+    function raz(){
+      var zero = document.getElementsByTagName('input');
+      i=0;
+      while (i!=zero.length) {
+        zero[i].value = " ";
+        i++;
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <!--Créer un bouton "Calculer la surface d'un rectangle". Faites en sorte que lorsqu'on clique sur le bouton, la
+    fonction surfaceRectagle() se lance. Cette fonction va demander la saisie d'une largeur, d'une longueur et afficher
+    la surface du rectangle correspondant.
+
+    Créer ensuite un nouveau bouton "Calculer le périmètre d'un rectangle". Faites en sorte que lorsqu'on clique sur le
+    bouton, la fonction periRectangle() se lance. Cette fonction va demander la saisie d'une largeur, d'une longueur et
+    afficher le périmètre du rectangle.
+
+    Pour l'affichage des résultats, pensez à mettre du texte pour qu'on sache à quoi se réfère les réponses finales ! -->
+
+
+    <button type="button"  onclick="surface()">Calculer la surface d 'un rectangle</button>
+    <button type="button"  onclick="perimetre()">calculer le perimetre d un rectangle</button>
+
+    <script>
+        
+    
+       function surface() {
+            var longueur =parseInt(prompt("longueur"));
+            var largeur = parseInt(prompt("largeur"));
+            alert (longueur*largeur);
+        }
+        function perimetre(){
+            var longueur=parseInt(prompt("longueur"));
+            var largeur=parseInt(prompt("largeur"));
+            alert ((longueur+largeur)*2);
+
+        }
+      
+    </script>
+
+</body>
+
+</html>

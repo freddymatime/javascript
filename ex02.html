@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo2</title>
+</head>
+
+<body>
+   <!-- Exercice 2 - écriture d'une fonction renvoyant une valeur
+    Créer une fonction qui :
+     PI  r
+    demande la saisie d'un rayon;
+    retourne la surface du cercle de ce rayon. Afficher ensuite le résultat de l'appel à cette fonction en cliquant sur
+    un bouton.-->
+    <button type="button" onclick="surface()">la surface du cercle est de :</button>
+    
+    <script>
+        var rayon = parseInt (prompt("rayon?"));
+        function surface() {
+            alert( Math.PI* (rayon^2));
+        }
+   </script>
+    
+
+
+
+
+</body>
+
+</html>

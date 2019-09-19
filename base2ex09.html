@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Créer un bouton. Au click de ce bouton, lancer la fonction testWhile. Cette fonction demande à l'utilisateur de saisir une chaîne de caractères contenant la lettre p, et le redemande tant que l'utilisateur ne l'a pas fait. Il affiche ensuite la chaîne saisie entre guillemets.-->
+
+    <button type="button" onclick="testWhile()"> chaine de caractere contenant p
+    </button>
+    <button type="button" onclick="testWhile2()">chaine de caractere contenant p</button>
+    <script>
+        function testWhile(){
+
+            var phrase= prompt("ecrire une phrase avec p ");
+            var result= phrase.indexOf('p');
+            if (result>-1){
+                alert("il y a un p  dans la chaine de caractere: '"+phrase+"' qui se trouve à la position "+ result);
+
+            }
+            else  {
+                alert("il n y a pas de p dans cette phrase");
+                testWhile();
+            }
+            
+
+            
+        }
+        function testWhile2(){
+
+            var phrase= prompt("ecrire une phrase avec p ");
+            var result= phrase.indexOf('p');
+            
+            while (result<=-1){
+                alert("il n y a pas de p dans cette phrase");
+                testWhile2();
+
+
+            }
+            alert("il y a un p  dans la chaine de caractere: '"+phrase+"' qui se trouve à la position "+ result);
+
+            testWhile2();
+
+        }
+    
+    </script>
+    
+</body>
+</html>
